@@ -8,6 +8,7 @@ describe "Song" do
  
   after(:each) do 
     Song.class_variable_set(:@@artists, [])
+    
     Song.class_variable_set(:@@genres, [])
     Song.class_variable_set(:@@count, 0)
     Song.class_variable_set(:@@artist_count, {})
